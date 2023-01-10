@@ -43,7 +43,6 @@ async def set_user_permissions(
         ))
 
 
-
 async def spreadsheets_update_value(
         spreadsheetid: str,
         projects: list,

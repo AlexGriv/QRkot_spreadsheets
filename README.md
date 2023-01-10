@@ -4,7 +4,7 @@
 
 Учебный проект во фреймворке FastAPI
 
-**QRkot** - это API сервиса по сбору средств для финансирования благотворительных проектов. В сервисе реализована возможность регистрации пользователей, добавления благотворительных проектов и пожертвований, которые распределяются по открытым проектам.
+**QRkot** - это API сервиса по сбору средств для финансирования благотворительных проектов. В сервисе реализована возможность регистрации пользователей, добавления благотворительных проектов и пожертвований, которые распределяются по открытым проектам. Формирования отчетов в Google Sheets
 
 Настроено автоматическое создание первого суперпользователя при запуске проекта.
 
@@ -35,6 +35,17 @@ DATABASE_URL='sqlite+aiosqlite:///./fastapi.db'
 SECRET=<secret>
 FIRST_SUPERUSER_EMAIL=<email superuser>
 FIRST_SUPERUSER_PASSWORD=<password superuser>
+TYPE=service_account
+PROJECT_ID=atomic-climate-<идентификатор>
+PRIVATE_KEY_ID=<id приватного ключа>
+PRIVATE_KEY="-----BEGIN PRIVATE KEY-----<приватный ключ>-----END PRIVATE KEY-----\n"
+CLIENT_EMAIL=<email сервисного аккаунта>
+CLIENT_ID=<id сервисного аккаунта>
+AUTH_URI=https://accounts.google.com/o/oauth2/auth
+TOKEN_URI=https://oauth2.googleapis.com/token
+AUTH_PROVIDER_X509_CERT_URL=https://www.googleapis.com/oauth2/v1/certs
+CLIENT_X509_CERT_URL=<ссылка>
+EMAIL=<email пользователя>
 
 ```
 4. Примените миграции для создания базы данных SQLite если потребуется:

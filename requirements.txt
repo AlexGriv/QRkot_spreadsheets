@@ -6,7 +6,7 @@
 #
 
 -i https://pypi.org/simple
-aiogoogle
+aiogoogle==5.0.0
 aiosqlite==0.17.0
 alembic==1.7.7
 anyio==3.6.1
@@ -31,6 +31,7 @@ h11==0.13.0
 httptools==0.4.0
 idna==3.3
 iniconfig==1.1.1
+isort==5.11.4
 makefun==1.13.1
 mako==1.2.0
 markupsafe==2.1.1
