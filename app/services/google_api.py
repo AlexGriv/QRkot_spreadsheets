@@ -6,20 +6,20 @@ from .constants import NOW_DATE_TIME, ROW_COUNT, COLUMN_COUNT, TABLE_VALUES
 
 
 SPREADSHEETS_BODY = dict(
-        properties=dict(
-            title=f'Отчет от', # noqa
-            locale='ru_RU',
-        ),
-        sheets=[dict(properties=dict(
-            sheetType='GRID',
-            sheetId=0,
-            title='Лист1',
-            gridProperties=dict(
-                rowCount=ROW_COUNT,
-                columnCount=COLUMN_COUNT,
-            )
-        ))]
-    )
+    properties=dict(
+        title=f'Отчет от', # noqa
+        locale='ru_RU',
+    ),
+    sheets=[dict(properties=dict(
+        sheetType='GRID',
+        sheetId=0,
+        title='Лист1',
+        gridProperties=dict(
+            rowCount=ROW_COUNT,
+            columnCount=COLUMN_COUNT,
+        )
+    ))]
+)
 
 
 async def spreadsheets_create(wrapper_services: Aiogoogle) -> str:
