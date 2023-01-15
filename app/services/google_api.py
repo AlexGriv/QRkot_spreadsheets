@@ -1,5 +1,3 @@
-from datetime import datetime
-
 from aiogoogle import Aiogoogle
 
 from app.core.config import settings
@@ -57,11 +55,10 @@ async def spreadsheets_update_value(
         wrapper_services: Aiogoogle
 ) -> None:
     service = await wrapper_services.discover('sheets', 'v4')
-    table_values =[
-    *[TABLE_VALUES],
-    *[list(map(str, project)) for project in projects]
+    table_values = [
+        *[TABLE_VALUES],
+        *[list(map(str, project)) for project in projects]
     ]
-
     update_body = {
         'majorDimension': 'ROWS',
         'values': table_values
