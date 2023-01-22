@@ -9,7 +9,7 @@
 Настроено автоматическое создание первого суперпользователя при запуске проекта.
 
 ## Ключевые технологии и библиотеки:
-- [Python](https://www.python.org/);
+- [Python](https://www.python.org/); 3.9
 - [FastAPI](https://fastapi.tiangolo.com/);
 - [SQLAlchemy](https://pypi.org/project/SQLAlchemy/);
 - [Alembic](https://pypi.org/project/alembic/);
